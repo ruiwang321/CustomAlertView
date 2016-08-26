@@ -7,16 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "CustomAlertView.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+- (IBAction)alert:(id)sender {
+
+    [CustomAlertView customAlertViewWithTitle:@"警告" message:@"是否删除是否删除是否删除是否删除是否删除？" cancelButtonTitle:@"再想想" confirmButtonTitle:@"确认删除" result:^(BOOL isConfirm) {
+            NSLog(@"%@",isConfirm?@"确认":@"取消");
+    }];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {

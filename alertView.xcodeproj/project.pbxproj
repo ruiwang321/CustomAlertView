@@ -15,6 +15,7 @@
 		23341AC61D6ECF440093F405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23341AC41D6ECF440093F405 /* LaunchScreen.storyboard */; };
 		23341AD11D6ECF440093F405 /* alertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23341AD01D6ECF440093F405 /* alertViewTests.m */; };
 		23341ADC1D6ECF440093F405 /* alertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23341ADB1D6ECF440093F405 /* alertViewUITests.m */; };
+		23341AEB1D6ECF930093F405 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23341AEA1D6ECF930093F405 /* CustomAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		23341AD71D6ECF440093F405 /* alertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23341ADB1D6ECF440093F405 /* alertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = alertViewUITests.m; sourceTree = "<group>"; };
 		23341ADD1D6ECF440093F405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23341AE91D6ECF930093F405 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		23341AEA1D6ECF930093F405 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		23341AB51D6ECF440093F405 /* alertView */ = {
 			isa = PBXGroup;
 			children = (
+				23341AE91D6ECF930093F405 /* CustomAlertView.h */,
+				23341AEA1D6ECF930093F405 /* CustomAlertView.m */,
 				23341AB91D6ECF440093F405 /* AppDelegate.h */,
 				23341ABA1D6ECF440093F405 /* AppDelegate.m */,
 				23341ABC1D6ECF440093F405 /* ViewController.h */,
@@ -272,6 +277,7 @@
 			files = (
 				23341ABE1D6ECF440093F405 /* ViewController.m in Sources */,
 				23341ABB1D6ECF440093F405 /* AppDelegate.m in Sources */,
+				23341AEB1D6ECF930093F405 /* CustomAlertView.m in Sources */,
 				23341AB81D6ECF440093F405 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
