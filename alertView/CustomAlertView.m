@@ -23,7 +23,7 @@
 @property (nonatomic, strong) UIView *maskView;
 @property (nonatomic, strong) UIButton *confBtn;
 @property (nonatomic, strong) UIButton *cancelBtn;
-@property (nonatomic, weak) result rrr;
+@property (nonatomic, copy) result rrr;
 
 @end
 
@@ -89,10 +89,12 @@
 }
 
 - (void)btnClicked:(UIButton *)btn {
-    if ([btn isEqual:self.confBtn]) {
-        self.rrr(YES);
-    }else {
-        self.rrr(NO);
+    if (self.rrr) {
+        if ([btn isEqual:self.confBtn]) {
+            self.rrr(YES);
+        }else {
+            self.rrr(NO);
+        }
     }
     
     [UIView animateWithDuration:0.3 animations:^{
